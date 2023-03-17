@@ -43,7 +43,7 @@ exec(commandImageId, (error, stdout, stderr) => {
 function createNewImage() {
   console.log("Creating new image...");
   const DIRECTORY =
-    "/home/dsy/Documents/Projects/creandolo/agroconectados-frontend/";
+    "/home/dsy/Documents/Projects/creandolo/agroconectados-frontend/"; // TODO: Change this to your directory
 
   const buildingImage = spawn(
     "docker",
@@ -92,7 +92,7 @@ function updateAWSInstance() {
     .connect({
       host: "54.162.224.243",
       username: "ubuntu",
-      privateKeyPath: "/home/dsy/.ssh/agroconectados.pem",
+      privateKeyPath: "/home/dsy/.ssh/agroconectados.pem", // TODO: Change this to your private key path
     })
     .then(() => {
       console.log("Connected with AWS instance...");
