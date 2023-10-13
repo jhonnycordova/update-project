@@ -90,7 +90,7 @@ function updateAWSInstance() {
   console.log("Connecting with AWS instance");
   ssh
     .connect({
-      host: "54.162.224.243",
+      host: "54.157.151.5",
       username: "ubuntu",
       privateKeyPath: "/home/dsy/.ssh/agroconectados.pem", // TODO: Change this to your private key path
     })
